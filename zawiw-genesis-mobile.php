@@ -2,8 +2,8 @@
 /*
 Plugin Name: ZAWiW Genesis Mobile
 Plugin URI:
-Description: Mobile Version for Genesis Lifestyle Pro Theme
-Version: 1.0
+Description: Mobile Version for Genesis Lifestyle Pro and Metro Pro Themes
+Version: 1.1
 Author: Sascha Winkelhofer
 Author URI:
 License: MIT

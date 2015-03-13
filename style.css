@@ -1,7 +1,9 @@
 #menu {
 	display: none;
 }
-
+#minimenu {
+	display: none;
+}
 @media only screen and (max-device-width: 767px) {
         #menu {
                 top: 5px;
@@ -12,6 +14,7 @@
                 border-radius: 5px;
                 border: 1px solid #DDD;
                 font-size: 2.8rem;
+		text-decoration: none !important;
                 padding:9px;
                 padding-top: 11px;
                 z-index: 10;
@@ -21,12 +24,18 @@
         #menu.mobileanimate {
                 display: none !important;
         }
+	body[class*="metro-pro"] #minimenu {
+                right: 5px;
+                top: 5px;
+        }
         #minimenu {
                 position: absolute;
                 color: #FFF !important;
+		display: block;
                 font-size: 2.5rem;
                 right: 0px;
                 top: 0px;
+		text-decoration: none;
         }
         .site-container {
                 top: 0px !important;
@@ -44,7 +53,10 @@
                 left: 50%;
 
         }
-        .nav-secondary {
+	body[class*="metro-pro"] .site-container {
+                padding-top: 70px;
+        }
+        body[class*="metro-pro"] .nav-primary, body[class*="lifestyle-pro"] .nav-secondary {
                 position: fixed;
                 left: -50%;
                 top: 0px;
@@ -56,15 +68,15 @@
                 transition: all .2s linear 0s;
         }
 
-        .nav-secondary.mobileanimate {
+        body[class*="metro-pro"] .nav-primary.mobileanimate, body[class*="lifestyle-pro"] .nav-secondary.mobileanimate {
                 box-shadow: 0px 0px 10px rgba(0,0,0,.9) !important;
                 left: 0%;
                 transition: all .2s linear 0s;
         }
-        .nav-secondary li {
+        body[class*="metro-pro"] .nav-primary li, body[class*="lifestyle-pro"] .nav-secondary li {
                 display: block !important;
         }
-        .nav-secondary li a {
+        body[class*="metro-pro"] .nav-primary li a, body[class*="lifestyle-pro"] .nav-secondary li a {
                 font-size: 1.4rem !important;
         }
 }
@@ -80,6 +92,7 @@
                 border-radius: 5px;
                 border: 1px solid #DDD;
                 font-size: 2.8rem;
+		text-decoration: none;
                 padding:9px;
                 padding-top: 11px;
                 z-index: 10;
@@ -93,9 +106,15 @@
                 position: absolute;
                 color: #FFF !important;
 		font-size: 2.5rem;
+		display: block;
 		right: 0px;
 		top: 0px;
+		text-decoration: none;
         }
+	body[class*="metro-pro"] #minimenu {
+		right: 5px;
+		top: 5px;
+	}
         .site-container {
 		top: 0px !important;
 		margin:0px;
@@ -112,7 +131,10 @@
                 left: 50%;
 
         }
-        .nav-secondary {
+	body[class*="metro-pro"] .site-container {
+		padding-top: 70px;
+	}
+        body[class*="metro-pro"] .nav-primary, body[class*="lifestyle-pro"] .nav-secondary {
                 position: fixed;
                 left: -50%;
                 top: 0px;
@@ -124,15 +146,15 @@
                 transition: all .2s linear 0s;
         }
 
-        .nav-secondary.mobileanimate {
+        body[class*="metro-pro"] .nav-primary.mobileanimate, body[class*="lifestyle-pro"] .nav-secondary.mobileanimate {
                 box-shadow: 0px 0px 10px rgba(0,0,0,.9) !important;
                 left: 0%;
                 transition: all .2s linear 0s;
         }
-        .nav-secondary li {
+        body[class*="metro-pro"] .nav-primary li, body[class*="lifestyle-pro"] .nav-secondary li {
                 display: block !important;
         }
-        .nav-secondary li a {
+        body[class*="metro-pro"] .nav-primary li a, body[class*="lifestyle-pro"] .nav-secondary li a {
                 font-size: 1.4rem !important;
         }
 }
